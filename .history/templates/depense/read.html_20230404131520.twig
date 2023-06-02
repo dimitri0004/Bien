@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<h2><strong>Liste des Depenses sur les Differents Bien Immobilier</strong>  </h2>
+<a class="btn btn-success" href="{{ path('depense_ajouter') }}" >+ Ajouter Une Depense</a>
+{% for Afficher in Afficher %}
+    <div class="card mt-5" style="width: 18rem;" >
+        <div class="card-body">
+        <h5 class="card-title" style="color: blue;">Depenses </h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+        <p class="card-text"> Bien Immobilier : <strong style="color: blue;">{{ Afficher.BienImmobilier.libelle }}</strong></p>
+        <h3>Montant de la depense :  <strong style="color: blue;">{{ Afficher.Montant }}</strong></h3>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+
+    
+{% else %}
+    <p>Aucune depense trouver</p>    
+ 
+{% endfor %}
+   
+
+
+{% endblock %}

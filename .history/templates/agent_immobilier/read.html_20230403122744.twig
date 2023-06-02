@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Striped Table</h4>
+        <p class="card-description">
+          Add class <code>.table-striped</code>
+        </p>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th> #</th>
+                <th>Nom </th>
+                <th>Prenom </th>
+                <th>E-Mail </th>
+                <th> Numero </th>   
+              </tr>
+            </thead>
+            <tbody>
+                {% for liste in afficher %}
+                    
+                {% endfor %}
+              <tr>
+                <td class="row">  </td>
+                <td>{{ afficher.nom }} </td>
+                <td>{{ afficher.prenom }}</td>
+                <td>{{ afficher.email }} </td>
+                <td> {{ afficher.numero }}</td>
+                  
+               
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

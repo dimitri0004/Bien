@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+{% block title %} Ajouter Une contratLocation{% endblock %}
+{% block body %}
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+            {% for message in app.flashes('success') %}
+                <div class="alert alert-success">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        <h4 class="card-title">Modifier les Informations Sur Le contrat de Location du Locataire</h4>
+            <p class="card-description">
+              Information Primaire
+                </p>
+               
+                {{ form_start(form, {'attr': {'class': 'form-floating mt-2'}}) }}
+                    <div class="form-group">
+                        {{ form_row(form.code,  {'attr': {'class': 'form-control' }}) }}
+                    </div>  
+                    <div >
+                        {{ form_row(form.date_debut,  {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_row(form.date_fin,  {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_row(form.loyer_mensuel,  {'attr': {'class': 'form-control', 'placeholder': 'Montant du loyer par moi '}}) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_row(form.montant_guarrantie,  {'attr': {'class': 'form-control', 'placeholder': 'Montant de la guarrantie verser '}}) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_row(form.Locataire,  {'attr': {'class': 'form-control' }}) }}
+                    </div>                    
+                    <button type="submit" class="btn btn-primary me-2">Modifier</button>
+                {{ form_end(form) }}    
+
+        </div> 
+    </div> 
+</div>        
+{% endblock %}

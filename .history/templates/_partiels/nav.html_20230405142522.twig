@@ -1,0 +1,253 @@
+
+<div class="container-scroller">
+    <div class="row p-0 m-0 proBanner" id="proBanner">
+        <div class="col-md-12 p-0 m-0">
+            
+        </div>
+    </div>
+<!-- partial:partials/_horizontal-navbar.html -->
+<div class="horizontal-menu">
+<nav class="navbar top-navbar col-lg-12 col-12 p-0">
+<div class="container-fluid">
+<div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
+<ul class="navbar-nav navbar-nav-left">
+  <li class="nav-item ms-0 me-5 d-lg-flex d-none">
+    <a href="#" class="nav-link horizontal-nav-left-menu"><i class="mdi mdi-format-list-bulleted"></i></a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+      <i class="mdi mdi-bell mx-0"></i>
+      <span class="count bg-success">2</span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+      <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+      <a class="dropdown-item preview-item">
+        <div class="preview-thumbnail">
+            <div class="preview-icon bg-success">
+              <i class="mdi mdi-information mx-0"></i>
+            </div>
+        </div>
+        <div class="preview-item-content">
+            <h6 class="preview-subject font-weight-normal">Application Error</h6>
+            <p class="font-weight-light small-text mb-0 text-muted">
+              Just now
+            </p>
+        </div>
+      </a>
+      <a class="dropdown-item preview-item">
+        <div class="preview-thumbnail">
+            <div class="preview-icon bg-warning">
+              <i class="mdi mdi-settings mx-0"></i>
+            </div>
+        </div>
+        <div class="preview-item-content">
+            <h6 class="preview-subject font-weight-normal">Settings</h6>
+            <p class="font-weight-light small-text mb-0 text-muted">
+              Private message
+            </p>
+        </div>
+      </a>
+      <a class="dropdown-item preview-item">
+        <div class="preview-thumbnail">
+            <div class="preview-icon bg-info">
+              <i class="mdi mdi-account-box mx-0"></i>
+            </div>
+        </div>
+        <div class="preview-item-content">
+            <h6 class="preview-subject font-weight-normal">New user registration</h6>
+            <p class="font-weight-light small-text mb-0 text-muted">
+              2 days ago
+            </p>
+        </div>
+      </a>
+    </div>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-bs-toggle="dropdown">
+      <i class="mdi mdi-email mx-0"></i>
+      <span class="count bg-primary">4</span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+      <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+      <a class="dropdown-item preview-item">
+        <div class="preview-thumbnail">
+            <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
+        </div>
+        <div class="preview-item-content flex-grow">
+            <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+            </h6>
+            <p class="font-weight-light small-text text-muted mb-0">
+              The meeting is cancelled
+            </p>
+        </div>
+      </a>
+      <a class="dropdown-item preview-item">
+        <div class="preview-thumbnail">
+            <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
+        </div>
+        <div class="preview-item-content flex-grow">
+            <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+            </h6>
+            <p class="font-weight-light small-text text-muted mb-0">
+              New product launch
+            </p>
+        </div>
+      </a>
+      <a class="dropdown-item preview-item">
+        <div class="preview-thumbnail">
+            <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
+        </div>
+        <div class="preview-item-content flex-grow">
+            <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+            </h6>
+            <p class="font-weight-light small-text text-muted mb-0">
+              Upcoming board meeting
+            </p>
+        </div>
+      </a>
+    </div>
+  </li>
+  <li class="nav-item dropdown">
+    <a href="#" class="nav-link count-indicator "><i class="mdi mdi-message-reply-text"></i></a>
+  </li>
+  <li class="nav-item nav-search d-none d-lg-block ms-3">
+    <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="search">
+            <i class="mdi mdi-magnify"></i>
+          </span>
+        </div>
+        <input type="text" class="form-control" placeholder="search" aria-label="search" aria-describedby="search">
+    </div>
+  </li>	
+</ul>
+<div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+    <a class="navbar-brand brand-logo" href="index.html"><img src="{{ asset('images/logo.svg') }}" alt="logo"/></a>
+    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{ asset('images/logo-mini.svg') }}" alt="logo"/></a>
+</div>
+<ul class="navbar-nav navbar-nav-right">
+    <li class="nav-item dropdown  d-lg-flex d-none">
+      <button type="button" class="btn btn-inverse-primary btn-sm">Product </button>
+    </li>
+    <li class="nav-item dropdown d-lg-flex d-none">
+      <a class="dropdown-toggle show-dropdown-arrow btn btn-inverse-primary btn-sm" id="nreportDropdown" href="#" data-bs-toggle="dropdown">
+      Reports
+      </a>
+      <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="nreportDropdown">
+          <p class="mb-0 font-weight-medium float-left dropdown-header">Reports</p>
+          <a class="dropdown-item">
+            <i class="mdi mdi-file-pdf text-primary"></i>
+            Pdf
+          </a>
+          <a class="dropdown-item">
+            <i class="mdi mdi-file-excel text-primary"></i>
+            Exel
+          </a>
+      </div>
+    </li>
+    <li class="nav-item dropdown d-lg-flex d-none">
+      <button type="button" class="btn btn-inverse-primary btn-sm">Settings</button>
+    </li>
+    {% if app.user %}
+      <li class="nav-item nav-profile dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
+          <span class="nav-profile-name">Johnson</span>
+          <span class="online-status"></span>
+          <img src="{{ asset('images/faces/face28.png') }}" alt="profile"/>
+        </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="mdi mdi-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item">
+                <i class="mdi mdi-logout text-primary"></i>
+                Logout
+              </a>
+          </div>
+      </li>
+      {% else %}
+      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+      </svg>Se connecter</a>  
+  {% endif %}    
+</ul>
+<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="horizontal-menu-toggle">
+  <span class="mdi mdi-menu"></span>
+</button>
+</div>
+</div>
+</nav>
+<nav class="bottom-navbar">
+<div class="container">
+<ul class="nav page-navigation">
+  <li class="nav-item">
+    <a class="nav-link" href="{{ path('dashbord') }}">
+      <i class="mdi mdi-file-document-box menu-icon"></i>
+      <span class="menu-title">Dashboard</span>
+    </a>
+  </li>
+  <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="mdi mdi-cube-outline menu-icon"></i>
+        <span class="menu-title">Bien Immobilier</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="submenu">
+          <ul>
+            <li class="nav-item"><a class="nav-link" href="{{ path('bienImmobilier_ajouter') }}">Ajouter</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('bienImmobilier_liste') }}">Lister</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('bienImmobilier_afficher') }}">Afficher</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('depense_afficher') }}">Depense</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('revenu_afficher') }}">Revenu</a></li>
+          </ul>
+      </div>
+  </li>
+  <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="mdi mdi-cube-outline menu-icon"></i>
+        <span class="menu-title">Agent Immobilier</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="submenu">
+      <ul>
+            <li class="nav-item"><a class="nav-link" href="{{ path('agentImmobilier_ajouter') }}">Ajouter</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/ui-features/typography.html">Lister</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('agentImmobilier_afficher') }}">Afficher</a></li>
+            
+      </ul>
+    </div>
+  </li>
+  <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="mdi mdi-cube-outline menu-icon"></i>
+        <span class="menu-title">Propreitaires</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="submenu">
+        <ul>
+            <li class="nav-item"><a class="nav-link" href="{{ path('propreitaire_ajouter') }}">Ajouter</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('propreitaire_afficher') }}">Afficher</a></li>
+        </ul>
+    </div>
+  </li>
+  <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="mdi mdi-cube-outline menu-icon"></i>
+        <span class="menu-title">locataire</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="submenu">
+        <ul>
+            <li class="nav-item"><a class="nav-link" href="{{ path('locataire_ajouter') }}">Ajouter</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('locataire_afficher') }}">Afficher</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('facture_afficher') }}">Facture</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ path('contratLocation_afficher') }}">Contrat de Location</a></li>
+        </ul>
+    </div>
+  </li>
+</ul>
+</div>
+</nav>
+</div>

@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<h2><strong>Liste des Depenses sur les Differents</strong>  </h2>
+{% for afficher in afficher %}
+    <div class="card text-center">
+        <div class="card-header">
+        Depense
+        </div>
+        <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">Depense sur le bien {{ afficher.BienImmobilier.libelle }}.</p>
+        <a href="#" class="btn btn-primary">Le Montant est de <h3><strong>{{ afficher.montant }}</strong></h3></a>
+        </div>
+        <div class="card-footer text-body-secondary">
+        2 days ago
+        </div>
+    </div>
+    
+{% else %}
+    <p>Aucun </p>    
+{% endfor %}
+   
+
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+{% block title %} Ajouter Une Facture{% endblock %}
+{% block body %}
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+            {% for message in app.flashes('success') %}
+                <div class="alert alert-success">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        <h4 class="card-title">Les Information Sur La Facture</h4>
+            <p class="card-description">
+              Information Primaire
+                </p>
+                <a class="btn btn-success" href="{{ path('facture_afficher') }}" >Liste des Facture</a>
+                {{ form_start(form, {'attr': {'class': 'form-sample mt-2'}}) }}
+                    <div class="form-group">
+                        {{ form_row(form.date_emission,  {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_row(form.date_delai,  {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_row(form.montant,  {'attr': {'class': 'form-control', 'placeholder': 'Montant '}}) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_row(form.locataire,  {'attr': {'class': 'form-control' }}) }}
+                    </div>                    
+                    <button type="submit" class="btn btn-primary me-2">Enregistrer</button>
+                {{ form_end(form) }}    
+
+        </div> 
+    </div> 
+</div>        
+{% endblock %}

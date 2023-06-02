@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="row">
+   {% for afficher in afficher %}
+  
+        <div class="col-3 ">
+            <article class="card mt-5" style="height: 450px;">    
+                    <img src="{{ asset('uploads/') ~ afficher.image  }} " style="height: 150px;" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title" style="height: 40px;">{{ afficher.libelle }}</h5>
+                        <p class="card-text">Le bien {{ afficher.libelle }} fait une taille de {{ afficher.taille }}m² et est situer a {{ afficher.localisation }}</p>
+                        <a href="#" class="btn btn-primary">{{ afficher.prix }}</a>
+                    
+                    </div>
+            </article>
+        </div>
+
+   {% endfor %}
+</div>   
+{% endblock %}

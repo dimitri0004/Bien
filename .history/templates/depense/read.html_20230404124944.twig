@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<h2><strong>Liste des Depenses sur les Differents Bien Immobilier</strong>  </h2>
+<a class="btn btn-success" href="{{ path('depense_ajouter') }}" >+ Ajouter Une Depense</a>
+{% for afficher in afficher %}
+
+{% for Afficher in afficher %}
+    
+{% endfor %}
+    <div class="card text-center">
+        <div class="card-header">
+        Depense
+        </div>
+        <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">Depense sur le bien {{ Afficher.BienImmobilier.libelle }}.</p>
+        <a href="#" class="btn btn-primary">Le Montant est de <h3><strong>{{ Afficher.montant }}</strong></h3></a>
+        </div>
+        <div class="card-footer text-body-secondary">
+        2 days ago
+        </div>
+    </div>
+    
+ 
+{% endfor %}
+   
+
+
+{% endblock %}
